@@ -22,9 +22,9 @@ do
             done    
             cont=0  
 done 
-for K in `seq 1 $numlog`  
+for k in `seq 1 $numlog`  
 do 
-    dia=`cat usuarios.txt | grep $nombre |grep $mesmax | head -n$K | tail -1| awk '{print $2}'`     
+    dia=`cat usuarios.txt | grep $nombre | grep $mesmax | head -n$k | tail -1| awk '{print $2}'`     
     if [ $diamax > $dia ] 
     then  
     diamax=$dia 
